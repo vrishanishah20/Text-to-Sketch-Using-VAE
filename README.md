@@ -70,6 +70,3 @@ sbatch scripts/train_lightning.slurm
     year={2022}
 }
 
-## License
-
-MIT License. Feel free to use and adapt for academic or personal use.
