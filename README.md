@@ -52,7 +52,8 @@ sbatch scripts/train_lightning.slurm
 
 ## Results (on 20 epochs)
 - Reconstruction on 5 images shown
-- Image generation performed with prompts 
+- Image generation performed with prompts
+- Streamlit application deployed for visualization
 
 ## Future Work
 
