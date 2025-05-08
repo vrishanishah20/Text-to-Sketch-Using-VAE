@@ -1,0 +1,21 @@
+# Core
+torch
+tensorflow
+
+# Lightning for training
+pytorch-lightning>=2.0
+tensorboard
+
+# Data and utils
+pandas
+matplotlib
+opencv-python
+ftfy 
+regex 
+tqdm
+datasets
+
+# Transformers + CLIP
+transformers
+huggingface_hub
+git+https://github.com/openai/CLIP.git

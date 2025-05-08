@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'torch'
+  File "/home/jci0365/Text-to-Sketch-Using-VAE/training/train_lightning.py", line 76
+    gradient_clip_val=1.0 
+    ^
+SyntaxError: invalid syntax
