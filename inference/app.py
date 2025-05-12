@@ -33,7 +33,7 @@ model = load_model()
 tokenizer, bert = load_bert()
 
 # GUI making
-st.title("🎨 Text-to-Sketch Generator using CVAE")
+st.title("Text-to-Sketch Generator using CVAE")
 user_prompt = st.text_input("Enter a description (e.g., 'a zebra in a field')")
 
 if st.button("Generate Sketch") and user_prompt:
