@@ -18,6 +18,52 @@ The model follows a standard encoder-decoder VAE structure with conditional inpu
 - **Training**: Implemented PyTorch Lightning to streamline training workflows and enable faster, more scalable inference across GPUs.
 - **Optimization**: Integrated mixed precision training, efficient dataloaders, and gradient clipping to accelerate convergence and stabilize training performance.
 
+## Project Structure
+
+```
+.
+├── data/                          # Contains paired sketch-text dataset files
+│   └── [dataset files]            # Images and corresponding text files
+│
+├── inference/                     # Scripts for generating sketches from text prompts
+│   └── generate.py                # Main inference script using trained model
+│
+├── lightning_logs/                # PyTorch Lightning logs and checkpoints
+│   └── cvae/                      # Directory for CVAE model logs
+│
+├── logs/                          # Additional training logs and metrics
+│
+├── outputs/                       # Generated outputs from inference scripts
+│
+├── training/                      # Training scripts and utilities
+│   └── train_lightning.py         # Main training script using PyTorch Lightning
+│   └── model.py                   # Defines the CVAE model architecture
+│   └── dataset.py                 # Dataset class for loading and preprocessing data
+│   └── utils.py                   # Utility functions for training and evaluation
+│
+├── create_clip_embeddings.slurm   # SLURM script for generating CLIP embeddings
+├── image_embeddings.npy           # Precomputed CLIP image embeddings
+├── requirements.txt               # List of required Python packages
+├── train.slurm                    # SLURM script for training the model
+├── train_lightning.slurm          # Alternative SLURM script for training with Lightning
+├── README.md                      # Project documentation (this file)
+├── Report.pdf                     # Detailed project report
+```
+
+### Key Components:
+
+- **data/**: Contains the dataset of sketches and corresponding text descriptions.
+- **inference/**: Scripts for generating sketches from text prompts using the trained model.
+- **lightning_logs/**: Stores logs and checkpoints from PyTorch Lightning training sessions.
+- **logs/**: Additional logs and metrics from training and evaluation.
+- **outputs/**: Generated sketch outputs from inference scripts.
+- **training/**: Contains training scripts, model definitions, dataset classes, and utility functions.
+- **create_clip_embeddings.slurm**: SLURM script to generate CLIP embeddings for the dataset.
+- **image_embeddings.npy**: Precomputed CLIP image embeddings used for conditioning the model.
+- **requirements.txt**: Specifies the Python package dependencies.
+- **train.slurm** and **train_lightning.slurm**: SLURM scripts for submitting training jobs to a cluster.
+- **README.md**: This file, providing an overview and documentation of the project.
+- **Report.pdf**: A comprehensive report detailing the project's methodology and results.
 
 ## Dataset
 
